@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bem Vindo ao cadastro de Pão</h1>
+    <div>
+        <a href="index.html">Página Inicial</a>
+    </div>
+    <form action="http://localhost:8080/pao" method="post" data-redirect="index.html">
+        <ul>
+          <li><label for="tipo">Tipo do Pão</label></li>
+          <li><input type="hidden" name="tipo" id="tipo" /></li>
+          <li><label for="tempoDeForno">Tempo de Forno </label></li>
+          <li><label type="text" name="descricao" id="descricao">descricao</li>
+          <li><input type="time" name="tempoDeForno" id="tempoDeForno" Time="0" /></li>
+          <li><button type="submit" id="botaoCadastro">Cadastrar</button></li>
+        </ul>
+      </form>
+      <script src="js/form-submit.js"></script>
+</body>
+</html>
