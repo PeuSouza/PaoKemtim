@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="cadastroPao.css">
 </head>
 <body>
     <h1>Bem Vindo ao cadastro de Pão</h1>
@@ -13,10 +14,36 @@
     <form action="http://localhost:8080/pao" method="post" data-redirect="index.html">
         <ul>
           <li><label for="tipo">Tipo do Pão</label></li>
-          <li><input type="hidden" name="tipo" id="tipo" /></li>
+          <li>
+        <select name="tipo">
+            <option value="DoceCoco">DoceCoco</option>
+            <option value="deHanburguer">deHanburguer</option>
+            <option value="Frances">Frances</option>
+            <option value="Bolachao">Bolachão</option>
+            <option value="deQuejo">deQueijo</option>
+            <option value="Integral">Integral</option>
+            <option value="sedinha">sedinha</option>
+            <option value="ciabatta">ciabatta</option>
+
+          </select>
+        </li>
           <li><label for="tempoDeForno">Tempo de Forno </label></li>
-          <li><label type="text" name="descricao" id="descricao">descricao</li>
-          <li><input type="number" name="tempoDeForno" id="tempoDeForno" Time="0" /></li>
+          <li><input type="time" name="tempoDeForno" id="tempoDeForno" Time="0" /></li>
+          <li><label for="descricao" >descricao</li>
+            <li>
+                <select name="descricao">
+                    <option value="DoceCoco">Doce na medida com floquinhos apaixonantes de coco</option>
+                    <option value="deHanburguer">Redondinho, perfeito pra seu Hamburguer </option>
+                    <option value="Frances">O Classico, frances fofinho e perfeito com uma manteiguinha</option>
+                    <option value="Bolachao">Fofo e grandão</option>
+                    <option value="deQuejo">deQueijo fofo e saboroso</option>
+                    <option value="Integral">Integral, perfeito pra sua dieta</option>
+                    <option value="sedinha">sedinha, ideal pra seu cachorro quente</option>
+                    <option value="ciabatta">ciabatta, pra impressionar no sandwich</option>
+        
+                  </select>
+                
+            </li>
           <li><button type="submit" id="botaoCadastro">Cadastrar</button></li>
         </ul>
       </form>
