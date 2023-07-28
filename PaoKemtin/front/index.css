@@ -21,6 +21,7 @@ body {
   
   a {
     display: block;
+    align-items:flex-start;
     text-align: center;
     text-decoration: none;
     color: #fff;
@@ -29,11 +30,11 @@ body {
     border-radius: 4px;
     margin-bottom: 10px;
     width: 250px;
-    margin: 0 auto;
+    margin: 5px; 
   }
   
   a:hover {
-    background-color: #0056b3;
+    background-color:chartreuse;
   }
   
   /* Estilos responsivos */
